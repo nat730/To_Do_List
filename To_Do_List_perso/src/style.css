@@ -1,0 +1,50 @@
+  body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .checklist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .checkbox {
+    margin-right: 10px;
+  }
+
+  .checkbox_input {
+    cursor:grabbing;  
+  }
+
+  .task {
+    font-size: 16px;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: grey;
+  }
+
+  .checkbox {
+    margin-right: 10px; /* Espacement à droite de la case à cocher */
+  }
+  
+  .delete-button {
+    margin-left: 10px; /* Espacement à gauche du bouton "Delete All" */
+  }
+  
