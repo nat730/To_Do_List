@@ -1,5 +1,5 @@
   async function fetchTodo() {
-    const response = await fetch(`http://localhost:3000/api/${taskText}`)
+    const response = await fetch(`http://localhost:3000/api/get/${taskText}`)
     const todo = await response.text();
     console.log(todo);
   }
@@ -47,9 +47,9 @@
   addButton.addEventListener('click', () => {
       taskText = taskInput.value;
       if (taskText !== '') {
-          fetchTodo() 
           addTask(taskText);
           taskInput.value = '';
+          fetchTodo() 
       }});
 
   // Fonction pour ajouter une tâche à la liste
