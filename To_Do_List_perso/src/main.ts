@@ -36,10 +36,6 @@
       console.error('Une erreur s\'est produite :', error);
     }
   }
-  
-  
-  
-  
 
   // Sélection des éléments CSS
   const taskInput  = document.querySelector('#task-input') as HTMLInputElement;
@@ -57,7 +53,7 @@
       }});
 
   // Fonction pour ajouter une tâche à la liste
-  let index = 0;
+  let index = 1;
   function addTask(text: string) {
       const taskItem = document.createElement('li');
       taskItem.classList.add('checklist-item');
